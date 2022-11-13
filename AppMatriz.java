@@ -1,5 +1,6 @@
 import model.Graph;
 import util.LoadData;
+import model.Dijkstra;
 
 public class AppMatriz {
 
@@ -13,7 +14,9 @@ public class AppMatriz {
 
         Graph lisGraph = LoadData.loadList("data/data.txt");
 
-        System.out.println("Lista:");
+        System.out.println("Caminhos:");
         System.out.println(lisGraph);
+
+        Dijkstra.dijkstra(graphMatriz.converter(), 0);
     }
 }

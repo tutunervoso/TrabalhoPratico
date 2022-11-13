@@ -14,4 +14,6 @@ public interface Graph {
     boolean removeEdge(Vertex u, Vertex v);
 
     boolean isDirected();
+
+    double[][] converter();
 }

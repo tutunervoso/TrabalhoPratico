@@ -95,4 +95,10 @@ public class ListAdj implements Graph {
         return out;
     }
 
+    @Override
+    public double[][] converter() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
 }

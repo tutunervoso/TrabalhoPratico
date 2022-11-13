@@ -89,4 +89,15 @@ public class GraphMatriz implements Graph {
         return !isDirected;
     }
 
+    @Override
+    public double[][] converter(){
+        double conv[][]=new double[mat.length][mat.length];
+        for (int i=0;i<mat.length;i++) {
+            for (int j=0;j<mat.length;j++) {
+                conv[i][j]=mat[i][j];
+            }
+        }
+        return conv;
+    }
+
 }

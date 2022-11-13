@@ -1,7 +1,7 @@
 package model;
 
 public class Dijkstra {
-    public static void dijkstra(double[][] graph, int source) {
+    public static void dijkstra(double[][] graph, int source, String[] vertice) {
           int count = graph.length;
           boolean[] verticeLido = new boolean[count];
           double[] distancia = new double[count];
@@ -24,7 +24,7 @@ public class Dijkstra {
           }
   
           for (int i = 0; i < distancia.length; i++) {
-            System.out.println(String.format("Distância de %s para %s é %s", source, i, distancia[i]));
+            System.out.println(String.format("Distância de %s para %s é %s", vertice[source], vertice[i], distancia[i]));
           }
         }
       

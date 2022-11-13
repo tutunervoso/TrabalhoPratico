@@ -16,4 +16,6 @@ public interface Graph {
     boolean isDirected();
 
     double[][] converter();
+
+    String[] conLista();
 }

@@ -101,4 +101,16 @@ public class ListAdj implements Graph {
         return null;
     }
 
+    public String[] conLista(){
+        String[] conv= new String[10];
+        int i=0;
+        List<Map.Entry<Vertex, LinkedList<Edge>>> verticesStream = vertices.entrySet().stream()
+                .collect(Collectors.toList());
+
+        for (Map.Entry<Vertex, LinkedList<Edge>> item : verticesStream) {
+            conv[i]=item.getKey().toString();
+            i++;
+        }
+        return conv;
+    }
 }

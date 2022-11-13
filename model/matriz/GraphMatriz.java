@@ -100,4 +100,10 @@ public class GraphMatriz implements Graph {
         return conv;
     }
 
+    @Override
+    public String[] conLista() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
 }

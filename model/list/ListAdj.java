@@ -85,7 +85,7 @@ public class ListAdj implements Graph {
                 .collect(Collectors.toList());
 
         for (Map.Entry<Vertex, LinkedList<Edge>> item : verticesStream) {
-            out += "from " + item.getKey();
+            out += "De " + item.getKey();
             for (Edge edge : item.getValue()) {
                 out += edge;
             }

@@ -21,7 +21,7 @@ public class Edge {
 
     @Override
     public String toString() {
-        return " [to " + vertex + ", " + value + "]";
+        return " [Para " + vertex + ", " + value + "]";
     }
 
 }

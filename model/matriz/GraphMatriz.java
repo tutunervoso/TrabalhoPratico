@@ -45,9 +45,9 @@ public class GraphMatriz implements Graph {
         String out = "";
         for (double[] linha : mat) {
             for (double valor : linha) {
-                out += (valor + " ");
+                out += ("| "+valor + "\t");
             }
-            out += "\n";
+            out += "|\n";
         }
         return out;
     }
